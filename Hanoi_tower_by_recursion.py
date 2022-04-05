@@ -1,3 +1,8 @@
+##recursively solves Hanoi tower
+#@param takes number of tiles/loops in the tower as input
+#returns the moves/steps to solve the hanoi tower
+#@author aRahnama
+
 import sys
 
 def hanoi(n, left):
