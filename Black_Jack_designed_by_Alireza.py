@@ -1,7 +1,7 @@
-# IMPORT STATEMENTS AND VARIABLE DECLARATIONS:
 
 import random
 
+#declaring variables
 suits = ('Hearts', 'Diamonds', 'Spades', 'Clubs')
 ranks = ('Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace')
 values = {'Two':2, 'Three':3, 'Four':4, 'Five':5, 'Six':6, 'Seven':7, 'Eight':8, 
@@ -9,8 +9,14 @@ values = {'Two':2, 'Three':3, 'Four':4, 'Five':5, 'Six':6, 'Seven':7, 'Eight':8,
 
 playing = True
 
-# CLASS DEFINTIONS:
+# CLASS Creation
 
+'''
+Creates an instance of a playing card
+@param suit
+@param rank
+string representation is redefined
+'''
 class Card:
     
     def __init__(self,suit,rank):
@@ -20,6 +26,8 @@ class Card:
     def __str__(self):
         return self.rank + ' of ' + self.suit
     
+
+#Creates an instance of a Deck of cardsin the form of a list containing all of the cards string representation is redefined
 
 class Deck:
     
